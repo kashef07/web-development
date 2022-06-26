@@ -1,0 +1,253 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CSS Variables */
+:root{
+    --navbar-height :59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    /* position: relative; */
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+margin: 8px 3px;
+}
+
+#logo img{
+margin: 3px 7px;
+padding: 0px 30px;
+height: 56px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Heebo', sans-serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 2px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+        content: "";
+        background: url('images/bg1image.jpg') no-repeat center center/cover; 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9 ;
+}
+
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Service Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: #eae2e2;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'Heebo', sans-serif;
+}
+
+.animation:hover{
+    transform: rotatey(360deg);
+    transition: 2.5s;
+}
+
+/* Client Section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/images/bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 80px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+    
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('/images/contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width: 40%;
+    padding: 0.5rem;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Heebo', sans-serif;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Heebo', sans-serif;
+    /* padding:50px 0px; */
+
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.btn{
+    padding: 6px 15px;
+    border: 2px solid whitesmoke;
+    background-color: rgba(189, 53, 53, 0.743);
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.wrap{
+    padding:50px 0px;
+}
+.center{
+    text-align: center;
+}
+
+/* .h-primary-center{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Heebo', sans-serif;
+
+} */
+
+/* .grid{
+    display: grid;
+    grid-template-columns: 300px 500px 600px;
+    grid-gap: 50px;
+}
+.child{
+    height: 120px;
+    width: auto;
+    background-color:aqua;
+} */
